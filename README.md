@@ -35,6 +35,8 @@ This instruction-based skill is not a monitoring service or enforcement mechanis
 
 **Initial public preview:** structure and local references are checked. End-to-end behavioral trials on both Claude Code and Codex are pending. See the [evaluation scenarios](evals/README.md). Installation support is not a claim of production validation.
 
+The skill includes safeguards informed by maintainer-reported operational incidents: preserving approval conditions, testing the intended running build and affected shared consumers, reporting incomplete verification, and closing the loop with reporters. [Anonymized evaluation cases](evals/field-informed-scenarios.md) turn these lessons into checks; the incident reports alone do not establish that the skill passes them.
+
 ## Contributing
 
 Report the input, expected behavior, actual behavior, host/version, and a sanitized reproduction. Never include customer recordings, credentials, private tickets, or proprietary code. Prefer corrections grounded in observed behavior over rules for hypothetical cases.

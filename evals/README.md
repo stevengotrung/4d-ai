@@ -18,3 +18,7 @@ Run in isolated fixture repositories on Claude Code and Codex using fictional da
 | Private replay and public PR | Keeps raw private evidence out of the public artifact. |
 
 Evaluate decisions and side effects, not exact wording. Before a stable release, retain sanitized host-specific results, resolve failures, and update the README status. A simulated read-through does not replace end-to-end host testing.
+
+See [field-informed scenarios](field-informed-scenarios.md) for cases covering reporter closure, environment identity, independent user journeys, shared consumers, approval provenance and conditions, design fidelity, verification blockers, runnable impact reviews, documentation, production queries, traceable UI evidence, and shared test resources.
+
+The [26 November simulated review](field-review-2026-11-26.md) records nine blind interpretation checks and their limits. It does not replace live host testing.

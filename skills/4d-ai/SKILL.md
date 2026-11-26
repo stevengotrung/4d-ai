@@ -43,6 +43,8 @@ Read relevant code and tests, reproduce when feasible, and compare behavior with
 
 After approval, implement the smallest coherent change that solves the approved problem. Follow [implementation guidance](references/implementation-and-verification.md). Verify behavior with appropriate tests and direct checks, reporting what passed, failed, or remains untested. Open a PR/MR when requested or authorized; otherwise prepare the patch and summary. Approval to implement does not automatically authorize merging or deploying.
 
+Verify the running build corresponds to the intended revision before relying on environment checks. Inspect affected consumers of shared code and try relevant user journeys beyond the authored acceptance script. If the primary interaction remains untested, report partial verification rather than declaring the feature verified.
+
 ## Determine Impact: does it work in practice?
 
 Define a baseline or comparison, user outcome, relevant guardrails, follow-up window, and reviewer. Read [impact guidance](references/measuring-impact.md). Identify missing instrumentation; include instrumentation changes only within agreed scope.
@@ -54,3 +56,5 @@ Separate implementation verification from real-world impact. Without post-releas
 Record evidence pointers, the current proposal, approval scope, changes, verification results, and next action. Distinguish proposed, approved, implemented, verified, released, and impact-reviewed work. These are meanings, not required tracker labels.
 
 Map them to project labels/statuses only when configured and update as authorized. Read new feedback before resuming. Consult [integration guidance](references/integrations.md) as needed. Do not claim monitoring continues after this session unless a separate execution mechanism is actually configured.
+
+When work originates from customer or reporter feedback, track closing the loop: what changed, how to use it, prerequisites, and who will notify them. Send only with authorization; otherwise prepare a draft and hand off to an owner. Record notification separately from implementation, release, and measured impact. A released change is not evidence that the reporter can use it or has been informed.
