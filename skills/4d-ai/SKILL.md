@@ -1,9 +1,9 @@
 ---
-name: 4d-product-improvement
+name: 4d-ai
 description: Use when investigating user-facing bugs or feature improvements from session replays, analytics, logs, reports, or customer feedback, or when implementing an approved evidence-based improvement and reviewing its impact. Not for unrelated coding tasks.
 ---
 
-# 4D Product Improvement
+# 4D AI
 
 Apply **Define → Dialogue → Discern → Determine Impact** to user-facing software problems. These are recurring competencies, not a rigid sequence or mandatory response headings. Scale the work to uncertainty and consequences. Preserve the user's scope and language; follow project conventions.
 

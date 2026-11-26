@@ -1,4 +1,4 @@
-# 4D Framework Skills
+# 4D AI
 
 Turn evidence of user difficulties into reviewed, verified software improvements.
 
@@ -10,10 +10,10 @@ An English-language agent skill for **Claude Code and Codex**, based on the [4D 
 
 - [Install for Claude Code](docs/claude-code.md)
 - [Install for Codex](docs/codex.md)
-- [Read the skill](skills/4d-product-improvement/SKILL.md)
-- [Understand the framework](skills/4d-product-improvement/references/framework.md)
+- [Read the skill](skills/4d-ai/SKILL.md)
+- [Understand the framework](skills/4d-ai/references/framework.md)
 
-> Use 4d-product-improvement to investigate this report. Explain what the evidence supports and propose a fix for my approval. After approval, implement it, verify it, and open a PR.
+> Use 4d-ai to investigate this report. Explain what the evidence supports and propose a fix for my approval. After approval, implement it, verify it, and open a PR.
 
 For an already approved task, provide the proposal or its location. The skill should continue from that decision rather than request approval again.
 
@@ -25,7 +25,7 @@ One shared skill, focused references, a reusable finding template, and three fic
 - [Customer feedback to an improvement](examples/customer-feedback-to-improvement.md)
 - [Error logs to a bug fix](examples/error-log-to-fix.md)
 
-No particular tracker, analytics service, agent name, or label is required. Chat and repository documents are sufficient to start. Mixpanel, Jira, GitHub, and GitLab are optional integrations through tools you already have. See [integration guidance](skills/4d-product-improvement/references/integrations.md).
+No particular tracker, analytics service, agent name, or label is required. Chat and repository documents are sufficient to start. Mixpanel, Jira, GitHub, and GitLab are optional integrations through tools you already have. See [integration guidance](skills/4d-ai/references/integrations.md).
 
 ## Scope and status
 
