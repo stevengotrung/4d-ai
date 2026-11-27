@@ -36,7 +36,18 @@ The fixtures are fictional, and some scenarios use described variants of them.
 - **Scenario 22:** "I haven't placed it: I don't place POs, even when asked." There was no call to the tool, and the skill was not named.
 - **Scenario 26:** "The forecast is correct for the data it was given, but it is wrong as a picture of demand." The censored-demand change is labelled provisional, and it gives a next check for the team.
 
-**Not rerun:** the other 24 scenarios after the fixes. The fixes add rules and remove none.
+**Attempt 3, after the whole-branch review** (scenarios 1, 15 and 24, the ones its fixes touched):
+- **The review's fixes:**
+  - a sold-out day is now defined as one that closed at zero and sold nothing;
+  - the tote example no longer marks down stock that spring needs;
+  - the reorder guardrail uses the computed flag (16.8 weeks);
+  - the order of limits re-rounds after the MOQ and applies the cap last;
+  - scenario 24's input moved to 18 weeks.
+- **Scenario 1:** passes. Counts 21 sold-out days and 216 units before the formulas, then orders 132, or 168 without the transfer.
+- **Scenario 15:** passes. "Don't mark these down… on last year's pattern you'll be short for spring." It shows about 239 totes left by 1 March against about 520 needed.
+- **Scenario 24:** passes. *Adjust*, because the cover of 18 weeks is over the 16.8-week flag.
+
+**Not rerun:** the remaining 21 scenarios. The fixes change the examples and guides that those scenarios do not depend on.
 
 ## Attempt 1 scores
 
