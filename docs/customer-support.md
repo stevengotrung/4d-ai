@@ -27,17 +27,31 @@ Paste the customer message, useful previous replies, relevant documentation or p
 
 ## Try it
 
-Replace the command with the one for your host:
+After installation, call the skill and paste the customer's request. No additional workflow instructions are required.
+
+**Claude Code:**
 
 ```text
-/4d-customer-support Investigate the request below using the supplied documentation. Separate verified facts from assumptions. Draft a customer response for my review; do not send it. Include an internal note and a handoff only if needed.
+/4d-customer-support
 
-Customer: I followed your export instructions, but the report still fails.
-Prior attempt: Retried the same export after refreshing.
-Available context: [paste current guidance and sanitized error details]
+[Paste the customer's request here]
 ```
 
-Other starting prompts:
+**Codex:**
+
+```text
+$4d-customer-support
+
+[Paste the customer's request here]
+```
+
+The skill automatically investigates available context, separates facts from assumptions, and prepares a reply draft for review. It adds an internal note or handoff only when useful. It does not send messages or change customer records without applicable authorization. You do not need to restate these defaults or approve starting the analysis.
+
+Provide history, policies, or source links when useful, but no fixed intake form is required. If essential facts are missing, the agent asks focused questions or includes them in the customer draft instead of inventing an answer.
+
+### Optional customizations
+
+Use extra instructions only when you want to change the emphasis. These are examples, not required prompts:
 
 - **Repeat contact:** “Review the history. Explain what remains unresolved and propose the next useful action instead of repeating the last reply.”
 - **Return/refund:** “Check this request against the supplied return policy and order status. Draft the next reply without promising or issuing a refund.”
