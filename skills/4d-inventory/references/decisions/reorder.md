@@ -30,7 +30,7 @@ Inventory position = available + incoming that is expected before the new order 
 
 - Use available (on hand − committed) or on hand with committed subtracted, never both.
 - Count confirmed and partially received POs. Count drafts only if the merchant will send them, and flag stale drafts.
-- Incoming that arrives later than the new order would, or has no date, reduces the order quantity but is not cover before then. Say so if a shortfall falls before it lands.
+- Incoming that arrives later than the new order would, or has no date, reduces the order quantity but is not cover before then. Say so in the brief whenever it changes the quantity, and say so if a shortfall falls before it lands.
 - Count an inbound transfer once: it has already left the other location.
 
 ## Already out of stock
@@ -38,6 +38,7 @@ Inventory position = available + incoming that is expected before the new order 
 - **The variant stops selling when out of stock:** demand during the gap is lost. Do not add it to the order.
 - **It keeps selling** (backorders): add the backlog to the order, because those orders are waiting to ship.
 - **Oversold stock:** negative available stock widens the gap by that amount.
+- **The data and the merchant disagree** about whether it is sold out (for example, the stock file shows a drop with no sales): name the quick check that settles it, and give the order to place once the check settles it, for each outcome. Do not leave an item that may be sold out with no order to act on.
 
 ## Limits, in order
 
@@ -59,7 +60,7 @@ Many tools only warn on MOQ and order value and do not change the number. Say wh
 
 ## Guardrail
 
-Days of inventory on arrival should stay under the slow-stock flag in [the slow-stock guide](slow-stock.md). For a seasonal pre-build, which is meant to exceed it, use end-of-season sell-through as the guardrail instead.
+Days of inventory on arrival should stay under the slow-stock flag in [the slow-stock guide](slow-stock.md). Compute the flag from its formula when lead time, order cycle and safety days are known. Otherwise use the 90-day fallback and say the formula could not run. For a seasonal pre-build, which is meant to exceed it, use end-of-season sell-through as the guardrail instead.
 
 ## Worked example (fictional)
 

@@ -75,6 +75,12 @@ The short form of the checks. The `4d-inventory` skill holds the full list with 
 
 A result that is correct for the inputs it was given points at the inputs or settings, not at the calculation. Say which.
 
+When a product team is investigating its own tool, the output is a finding, not a merchant brief. State it in this form:
+
+- the tool's number is correct for its inputs, or it is not;
+- the input or setting problem, if there is one (for example, "3 sold-out weeks counted as weak demand");
+- any product change, labelled provisional until the team has checked how the forecaster actually treats that input.
+
 ## Glossary
 
 Merchant words first. Units are in brackets.

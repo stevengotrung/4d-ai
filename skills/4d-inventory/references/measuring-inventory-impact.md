@@ -7,7 +7,7 @@ A brief is a prediction. The review checks it against what happened on both side
 - **Outcome:** the measure on the side the decision aimed at. Sold-out days per 30 days for Availability; slow-stock value or days of inventory for Cash.
 - **Guardrail:** the measure on the opposite side, with its limit. A stockout fix is watched for days of inventory going over the slow-stock flag; a cash fix is watched for new sold-out days.
 - **Baseline:** the same measure over a comparable window before the change.
-- **Review date:** a calendar date, not "later".
+- **Review date:** a calendar date, not "later". For a reorder, set it after the order lands plus the review window, never on the arrival day, because the outcome is measured after arrival.
 - **Rules:** what result means keep, adjust or stop.
 
 ## Window
