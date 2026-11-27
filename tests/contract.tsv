@@ -90,3 +90,15 @@ skills/4d-inventory/references/data-checks.md	on-hand
 skills/4d-inventory/references/data-checks.md	could not run
 skills/4d-inventory/references/data-checks.md	120–180
 skills/4d-inventory/references/data-checks.md	10–20 sale points
+skills/4d-inventory/references/decisions/forecast-trust.md	trust with an adjustment
+skills/4d-inventory/references/decisions/forecast-trust.md	don't trust yet
+skills/4d-inventory/references/decisions/forecast-trust.md	P10–P90
+skills/4d-inventory/references/decisions/forecast-trust.md	bias
+skills/4d-inventory/references/decisions/forecast-trust.md	seasonal-naive
+skills/4d-inventory/references/decisions/forecast-trust.md	MAPE
+skills/4d-inventory/references/decisions/forecast-trust.md	zero-sale
+skills/4d-inventory/references/decisions/forecast-trust.md	uncensored
+skills/4d-inventory/references/decisions/forecast-trust.md	same period last year
+skills/4d-inventory/references/decisions/forecast-trust.md	stayed in stock
+skills/4d-inventory/references/decisions/forecast-trust.md	too short to judge
+skills/4d-inventory/references/decisions/forecast-trust.md	../data-checks.md
