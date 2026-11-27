@@ -34,6 +34,13 @@ Each skill has one shared implementation for both hosts, focused references, and
 - [Customer feedback to an improvement](examples/customer-feedback-to-improvement.md)
 - [Error logs to a bug fix](examples/error-log-to-fix.md)
 
+The `4d-inventory` skill adds four fictional inventory walkthroughs, with their data:
+
+- [Reorder a variant that kept selling out](examples/inventory/reorder-trail-sock.md)
+- [Trust a forecast after a wholesale spike](examples/inventory/forecast-trust-hoodie.md)
+- [Slow stock before its season](examples/inventory/slow-stock-tote.md)
+- [A product team's "forecast too low" report](examples/inventory/team-bug-report.md)
+
 No particular tracker, analytics service, agent name, or label is required. Chat and repository documents are sufficient to start. Mixpanel, Jira, GitHub, and GitLab are optional integrations through tools you already have. See [integration guidance](skills/4d-ai/references/integrations.md).
 
 ## Scope and status
