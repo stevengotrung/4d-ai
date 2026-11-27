@@ -15,6 +15,10 @@ English-language agent skills for **Claude Code and Codex**, based on the [4D Fr
 | `4d-operations` | End-to-end process diagnosis and bounded improvement or automation pilots | [Usage and installation](docs/operations.md) |
 | `4d-learning-development` | Task-specific practice, developmental feedback, and learning transfer; not personnel ranking or employment decisions | [Usage and installation](docs/learning-development.md) |
 | `4d-sales` | Buyer needs, opportunity blockers, grounded proposals and follow-ups, and sales-to-delivery continuity | [Usage and installation](docs/sales.md) |
+| `4d-design` | Evidence-based UX assessment, interaction drafts, usability tests, and design handoffs | [Usage and installation](docs/design.md) |
+| `4d-procurement` | Supplier comparisons, supply conditions, total-cost uncertainty, and sourcing trials; no purchase-order execution | [Usage and installation](docs/procurement.md) |
+| `4d-finance-analysis` | Internal report reconciliation, variance explanations, and business scenarios; no financial transactions or statutory filings | [Usage and installation](docs/finance-analysis.md) |
+| `4d-management` | Cross-team decisions, trade-offs, dependencies, and accountable follow-through | [Usage and installation](docs/management.md) |
 
 For every skill, the command plus your situation is enough. Evidence checks, draft-first output, and targeted questions are built in. [Explore the role skills in an offline HTML demo](examples/role-skills-demo.html).
 
