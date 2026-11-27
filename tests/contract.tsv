@@ -1,1 +1,28 @@
 path	phrase
+shared/inventory-core.md	stops selling when out of stock
+shared/inventory-core.md	keeps selling
+shared/inventory-core.md	units ÷ in-stock days
+shared/inventory-core.md	3 or more sold-out days
+shared/inventory-core.md	censored share
+shared/inventory-core.md	inferred
+shared/inventory-core.md	variant × location
+shared/inventory-core.md	smooth
+shared/inventory-core.md	erratic
+shared/inventory-core.md	intermittent
+shared/inventory-core.md	lumpy
+shared/inventory-core.md	fill rate
+shared/inventory-core.md	days since first sale
+shared/inventory-core.md	sparse history
+shared/inventory-core.md	80%
+shared/inventory-core.md	days of inventory remaining
+shared/inventory-core.md	order cycle
+shared/inventory-core.md	1 − WAPE
+shared/inventory-core.md	MASE
+shared/inventory-core.md	## Stock Balance
+shared/inventory-core.md	## Censored demand
+shared/inventory-core.md	## Grain
+shared/inventory-core.md	## Demand classes
+shared/inventory-core.md	## New items
+shared/inventory-core.md	## ABC
+shared/inventory-core.md	## Glossary
+skills/4d-ai/SKILL.md	references/domains/inventory-core.md
