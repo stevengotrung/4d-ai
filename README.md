@@ -4,53 +4,66 @@
 
 **Define → Dialogue → Discern → Determine Impact**
 
-English-language skills for Claude Code and Codex, based on the [4D Framework](https://4dframework.org/). The core skill supplements your specialist workflows: it preserves the goal, evidence, approval scope and next action as work moves between roles or sessions.
+One English-language skill for Claude Code and Codex, based on the [4D Framework](https://4dframework.org/). Use it alongside your specialist workflows to keep the goal, evidence, decisions and next action intact across handoffs.
 
-## Start with a real task
+## Install
 
-```text
-Use 4d-ai with my existing support and engineering workflows.
-Help finish this customer issue. The fix is already approved: ...
+Clone this repository and copy the complete `skills/4d-ai` folder, including its references and assets, into the skill location for your host. No other skill or connector is required.
+
+```sh
+git clone https://github.com/stevengotrung/4d-ai.git
+cd 4d-ai
 ```
 
-The request and available context are enough. 4D resumes from existing decisions, asks only consequential questions and leaves a usable continuation. It does not require a tracker, connector, additional agent or another skill. It does not impose four response headings or another approval on already authorized work.
+For Claude Code:
 
-- [Install in Claude Code](docs/claude-code.md) or [Codex](docs/codex.md).
-- [Read the coordination skill](skills/4d-ai/SKILL.md).
-- [Usage and specialist combinations](docs/coordination.md).
-- [Follow a complete fictional case](skills/4d-ai/references/support-engineering.md).
-- [Open the offline demo](examples/coordination-demo.html): download the HTML and open it locally; GitHub shows source.
+```sh
+mkdir -p "$HOME/.claude/skills"
+cp -R -i skills/4d-ai "$HOME/.claude/skills/"
+```
 
-## What 4D adds
+For Codex, ask its skill installer:
 
-| Boundary | What is carried forward |
+```text
+Use $skill-installer to install skills/4d-ai from https://github.com/stevengotrung/4d-ai.
+```
+
+If the installer is unavailable, copy the folder into your configured Codex skills directory. If a copy already exists, preserve local changes and replace the complete folder instead of merging old files. Use one installation scope and start a new session after installation.
+
+## Use
+
+Invoke `/4d-ai` in Claude Code or `$4d-ai` in Codex, followed by your situation:
+
+> Help finish this customer issue using my support and engineering workflows. The fix is already approved: …
+
+4D resumes from existing decisions. It asks only consequential questions and leaves a usable continuation; it does not add another approval to already authorized work. Specialist skills are optional and supplied separately. 4D does not install them or launch extra agents.
+
+| When work moves… | 4D carries forward… |
 | --- | --- |
-| Start or resume | The actual user outcome and work already completed |
-| Decision | Original authorization, scope and unresolved conditions |
-| Handoff | Evidence, uncertainty, requested action and recipient status |
-| Completion | Distinct claims for verified work, release, notification and outcome |
-| Follow-up | An observable check, owner, trigger and result location |
+| Into a new role or session | The intended outcome, evidence and open questions |
+| From proposal to action | The original decision, approved scope and conditions |
+| Back from implementation | What was checked, what remains unverified and who acts next |
+| Toward closure | Whether work was delivered, the reporter informed and the outcome confirmed |
 
-Specialists still do the domain work. A completed task is not automatically a resolved customer problem. A useful record can be one paragraph in the existing chat or ticket; the [record template](skills/4d-ai/assets/work-record.md) is optional.
+A short note in the existing chat or ticket can be enough. No required tracker, fixed four-step ceremony or new document for every task.
 
-## Existing installations: behavior change
+## Explore
 
-**The name `4d-ai` now means cross-role coordination.** The previous software-improvement skill is preserved as `4d-engineering`. Read the [migration guide](docs/migration.md) before updating an installation. Nothing in your installed environment is changed automatically.
+- [Usage guide](docs/usage.md)
+- [Skill instructions](skills/4d-ai/SKILL.md)
+- [Complete fictional walkthrough](skills/4d-ai/references/support-engineering.md)
+- [Optional work record](skills/4d-ai/assets/work-record.md)
+- [Offline HTML demo](examples/coordination-demo.html) — download and open locally; GitHub displays source
+- [Comparison cases and protocol](evals/README.md)
 
-The [role previews](docs/role-previews.md) remain available as optional standalone specialist workflows and examples. Expansion is paused while we test the coordination approach. You may use other vendors' specialist skills instead.
+## Status
 
-## Status and evaluation
+**Preview.** Comparative trials and live combined-host validation are pending. Examples and the demo illustrate intended behavior, not measured improvement. The skill is an instruction package; it grants no permissions, enforces no controls and does not continue monitoring after a session.
 
-**Rewrite preview — comparative results pending.** This is an instruction package, not an enforcement mechanism, monitoring service or autonomous scheduler. It grants no access and guarantees neither compliance nor improved outcomes.
+## Contribute
 
-The [comparison protocol](evals/coordination/README.md) defines specialist-only versus specialist-plus-4D trials. Five fictional fixtures inspired by reported operational failures exercise approval fidelity, environment identity, shared consumers, reporter closure and measured impact. They are development cases, not independent evidence of superiority. Live host trials and held-out cases are still required.
-
-Earlier role checks remain in [the evaluation archive](evals/README.md); they do not validate this rewrite. All examples and demos are illustrative, not customer data or benchmark results.
-
-## Contributing
-
-Provide sanitized input, expected versus observed behavior, host/model/version and evidence. Do not include private recordings, credentials or customer identifiers. Prefer fewer demonstrated interventions over accumulating generic rules.
+Report sanitized inputs, expected and observed behavior, host/model/version and supporting evidence. Do not include customer recordings, credentials or private identifiers. Check local documentation links with `python3 scripts/check-links.py`.
 
 ## License
 
-Repository instructions, examples and tooling use the [MIT License](LICENSE). Linked third-party material retains its own terms. No third-party plugin content is bundled or installed. The framework is a proposed competency model, not a certification.
+[MIT](LICENSE). Linked third-party material retains its own terms. No third-party plugin content is bundled. The framework is a proposed competency model, not a certification.

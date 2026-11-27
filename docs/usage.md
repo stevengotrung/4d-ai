@@ -24,4 +24,4 @@ The support workflow performs the investigation; 4D preserves evidence, decision
 
 This is fictional. The actual response must use observed evidence and existing authority. Routine work should not accumulate status fields or extra approvals.
 
-See the [complete example](../skills/4d-ai/references/support-engineering.md), [migration guide](migration.md) and [comparison protocol](../evals/coordination/README.md).
+See the [complete example](../skills/4d-ai/references/support-engineering.md) and [comparison protocol](../evals/README.md).
