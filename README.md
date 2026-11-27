@@ -53,6 +53,8 @@ This instruction-based skill is not a monitoring service or enforcement mechanis
 
 The skill includes safeguards informed by maintainer-reported operational incidents: preserving approval conditions, testing the intended running build and affected shared consumers, reporting incomplete verification, and closing the loop with reporters. [Anonymized evaluation cases](evals/field-informed-scenarios.md) turn these lessons into checks; the incident reports alone do not establish that the skill passes them.
 
+**4d-inventory (initial preview):** a sibling skill that applies the four Ds to three inventory decisions: trusting a forecast, reordering, and slow stock. It shares an inventory core with `4d-ai` and only advises; it never places orders. Behavioural trials are pending; see the [inventory scenarios](evals/inventory-scenarios.md).
+
 ## Contributing
 
 Report the input, expected behavior, actual behavior, host/version, and a sanitized reproduction. Never include customer recordings, credentials, private tickets, or proprietary code. Prefer corrections grounded in observed behavior over rules for hypothetical cases.

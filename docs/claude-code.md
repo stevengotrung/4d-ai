@@ -9,6 +9,7 @@ git clone https://github.com/stevengotrung/4d-ai.git
 cd 4d-ai
 mkdir -p "$HOME/.claude/skills"
 cp -R -i skills/4d-ai "$HOME/.claude/skills/"
+cp -R -i skills/4d-inventory "$HOME/.claude/skills/"   # optional: inventory decisions
 ```
 
 If the destination exists, review changes before accepting overwrite prompts. Alternatively copy the same folder into `.claude/skills/` in your product project. Choose one scope to avoid duplicate installations.
