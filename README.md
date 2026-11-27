@@ -14,8 +14,9 @@ English-language agent skills for **Claude Code and Codex**, based on the [4D Fr
 | `4d-marketing` | Campaign diagnosis, grounded creative drafts, and measurable growth experiments | [Usage and installation](docs/marketing.md) |
 | `4d-operations` | End-to-end process diagnosis and bounded improvement or automation pilots | [Usage and installation](docs/operations.md) |
 | `4d-learning-development` | Task-specific practice, developmental feedback, and learning transfer; not personnel ranking or employment decisions | [Usage and installation](docs/learning-development.md) |
+| `4d-sales` | Buyer needs, opportunity blockers, grounded proposals and follow-ups, and sales-to-delivery continuity | [Usage and installation](docs/sales.md) |
 
-For every skill, the command plus your situation is enough. Evidence checks, draft-first output, and targeted questions are built in. [Explore the four role skills in an offline HTML demo](examples/role-skills-demo.html).
+For every skill, the command plus your situation is enough. Evidence checks, draft-first output, and targeted questions are built in. [Explore the role skills in an offline HTML demo](examples/role-skills-demo.html).
 
 The support demo is a standalone offline file with three fictional cases. Download the raw HTML and open it in a browser; GitHub's file view shows the source. It makes no AI calls and sends no messages.
 
