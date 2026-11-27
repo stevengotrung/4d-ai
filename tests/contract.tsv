@@ -1,0 +1,165 @@
+path	phrase
+shared/inventory-core.md	stops selling when out of stock
+shared/inventory-core.md	keeps selling
+shared/inventory-core.md	units ÷ in-stock days
+shared/inventory-core.md	3 or more sold-out days
+shared/inventory-core.md	censored share
+shared/inventory-core.md	inferred
+shared/inventory-core.md	variant × location
+shared/inventory-core.md	smooth
+shared/inventory-core.md	erratic
+shared/inventory-core.md	intermittent
+shared/inventory-core.md	lumpy
+shared/inventory-core.md	fill rate
+shared/inventory-core.md	days since first sale
+shared/inventory-core.md	sparse history
+shared/inventory-core.md	80%
+shared/inventory-core.md	days of inventory remaining
+shared/inventory-core.md	order cycle
+shared/inventory-core.md	1 − WAPE
+shared/inventory-core.md	MASE
+shared/inventory-core.md	## Stock Balance
+shared/inventory-core.md	## Censored demand
+shared/inventory-core.md	## Grain
+shared/inventory-core.md	## Demand classes
+shared/inventory-core.md	## New items
+shared/inventory-core.md	## ABC
+shared/inventory-core.md	## Glossary
+skills/4d-ai/SKILL.md	references/domains/inventory-core.md
+skills/4d-inventory/SKILL.md	name: 4d-inventory
+skills/4d-inventory/SKILL.md	Never places orders
+skills/4d-inventory/SKILL.md	Define
+skills/4d-inventory/SKILL.md	Dialogue
+skills/4d-inventory/SKILL.md	Discern
+skills/4d-inventory/SKILL.md	Determine Impact
+skills/4d-inventory/SKILL.md	at most three
+skills/4d-inventory/SKILL.md	variant × location
+skills/4d-inventory/SKILL.md	guardrail
+skills/4d-inventory/SKILL.md	evidence, not instruction
+skills/4d-inventory/SKILL.md	answer first
+skills/4d-inventory/SKILL.md	this might seem wrong because
+skills/4d-inventory/SKILL.md	No data
+skills/4d-inventory/SKILL.md	Sales only
+skills/4d-inventory/SKILL.md	Full data
+skills/4d-inventory/SKILL.md	Can't tell
+skills/4d-inventory/SKILL.md	Coming back
+skills/4d-inventory/references/maturity.md	gut feel
+skills/4d-inventory/references/maturity.md	spreadsheet
+skills/4d-inventory/references/maturity.md	rule-based
+skills/4d-inventory/references/maturity.md	forecast-driven
+skills/4d-inventory/references/maturity.md	over 5/day
+skills/4d-inventory/references/maturity.md	never scores
+skills/4d-inventory/references/measuring-inventory-impact.md	30 days
+skills/4d-inventory/references/measuring-inventory-impact.md	60–90
+skills/4d-inventory/references/measuring-inventory-impact.md	20 units a month
+skills/4d-inventory/references/measuring-inventory-impact.md	inconclusive
+skills/4d-inventory/references/measuring-inventory-impact.md	opposite
+skills/4d-inventory/references/measuring-inventory-impact.md	concurrent changes
+skills/4d-inventory/references/measuring-inventory-impact.md	acted on
+skills/4d-inventory/assets/stock-balance-brief.md	Do this
+skills/4d-inventory/assets/stock-balance-brief.md	Verdict
+skills/4d-inventory/assets/stock-balance-brief.md	Why this number
+skills/4d-inventory/assets/stock-balance-brief.md	Leans
+skills/4d-inventory/assets/stock-balance-brief.md	Inputs checked
+skills/4d-inventory/assets/stock-balance-brief.md	Seen
+skills/4d-inventory/assets/stock-balance-brief.md	Inferred
+skills/4d-inventory/assets/stock-balance-brief.md	Guardrail
+skills/4d-inventory/assets/stock-balance-brief.md	Look again
+skills/4d-inventory/assets/stock-balance-brief.md	Ruled out
+skills/4d-inventory/assets/stock-balance-brief.md	Without the checks
+skills/4d-inventory/references/data-checks.md	## Hygiene
+skills/4d-inventory/references/data-checks.md	## Demand
+skills/4d-inventory/references/data-checks.md	## Supply
+skills/4d-inventory/references/data-checks.md	## Tool settings
+skills/4d-inventory/references/data-checks.md	Track
+skills/4d-inventory/references/data-checks.md	gift cards
+skills/4d-inventory/references/data-checks.md	wholesale
+skills/4d-inventory/references/data-checks.md	refunds
+skills/4d-inventory/references/data-checks.md	bundle
+skills/4d-inventory/references/data-checks.md	whole history window
+skills/4d-inventory/references/data-checks.md	priced it in
+skills/4d-inventory/references/data-checks.md	observed lead time
+skills/4d-inventory/references/data-checks.md	supplier change
+skills/4d-inventory/references/data-checks.md	stale drafts
+skills/4d-inventory/references/data-checks.md	expected arrival
+skills/4d-inventory/references/data-checks.md	history total
+skills/4d-inventory/references/data-checks.md	high percentile
+skills/4d-inventory/references/data-checks.md	trend %
+skills/4d-inventory/references/data-checks.md	override
+skills/4d-inventory/references/data-checks.md	on-hand
+skills/4d-inventory/references/data-checks.md	could not run
+skills/4d-inventory/references/data-checks.md	120–180
+skills/4d-inventory/references/data-checks.md	10–20 sale points
+skills/4d-inventory/references/decisions/forecast-trust.md	trust with an adjustment
+skills/4d-inventory/references/decisions/forecast-trust.md	don't trust yet
+skills/4d-inventory/references/decisions/forecast-trust.md	P10–P90
+skills/4d-inventory/references/decisions/forecast-trust.md	bias
+skills/4d-inventory/references/decisions/forecast-trust.md	seasonal-naive
+skills/4d-inventory/references/decisions/forecast-trust.md	MAPE
+skills/4d-inventory/references/decisions/forecast-trust.md	zero-sale
+skills/4d-inventory/references/decisions/forecast-trust.md	uncensored
+skills/4d-inventory/references/decisions/forecast-trust.md	same period last year
+skills/4d-inventory/references/decisions/forecast-trust.md	stayed in stock
+skills/4d-inventory/references/decisions/forecast-trust.md	too short to judge
+skills/4d-inventory/references/decisions/forecast-trust.md	../data-checks.md
+skills/4d-inventory/references/decisions/reorder.md	(lead time + safety days) × sales speed
+skills/4d-inventory/references/decisions/reorder.md	Nothing is suggested until
+skills/4d-inventory/references/decisions/reorder.md	(lead time + order cycle + safety days) × sales speed
+skills/4d-inventory/references/decisions/reorder.md	never both
+skills/4d-inventory/references/decisions/reorder.md	arrives later
+skills/4d-inventory/references/decisions/reorder.md	lost
+skills/4d-inventory/references/decisions/reorder.md	backlog
+skills/4d-inventory/references/decisions/reorder.md	manual floor
+skills/4d-inventory/references/decisions/reorder.md	fixed order quantity
+skills/4d-inventory/references/decisions/reorder.md	max inventory
+skills/4d-inventory/references/decisions/reorder.md	case pack
+skills/4d-inventory/references/decisions/reorder.md	only warn
+skills/4d-inventory/references/decisions/reorder.md	transfer first
+skills/4d-inventory/references/decisions/reorder.md	cash cost
+skills/4d-inventory/references/decisions/reorder.md	end-of-season sell-through
+skills/4d-inventory/references/decisions/reorder.md	does not create
+skills/4d-inventory/references/decisions/slow-stock.md	+ 60
+skills/4d-inventory/references/decisions/slow-stock.md	90 days
+skills/4d-inventory/references/decisions/slow-stock.md	worth a look
+skills/4d-inventory/references/decisions/slow-stock.md	30 / 60 / 90+
+skills/4d-inventory/references/decisions/slow-stock.md	kept selling out
+skills/4d-inventory/references/decisions/slow-stock.md	pre-build
+skills/4d-inventory/references/decisions/slow-stock.md	override
+skills/4d-inventory/references/decisions/slow-stock.md	stop buying
+skills/4d-inventory/references/decisions/slow-stock.md	cut order quantities
+skills/4d-inventory/references/decisions/slow-stock.md	supplier return
+skills/4d-inventory/references/decisions/slow-stock.md	bundle with a fast-seller
+skills/4d-inventory/references/decisions/slow-stock.md	mark down part
+skills/4d-inventory/references/decisions/slow-stock.md	liquidate
+skills/4d-inventory/references/decisions/slow-stock.md	margin
+skills/4d-inventory/references/decisions/slow-stock.md	60–90 days
+evals/inventory-scenarios.md	Does **not** censor
+evals/inventory-scenarios.md	lost demand
+evals/inventory-scenarios.md	pre-build
+evals/inventory-scenarios.md	doesn't create
+evals/inventory-scenarios.md	Treats it as data
+evals/inventory-scenarios.md	withhold
+skills/4d-inventory/SKILL.md	count the totals from the files
+skills/4d-inventory/SKILL.md	never offer to run it
+skills/4d-inventory/SKILL.md	do not name this skill
+skills/4d-inventory/SKILL.md	rests on a default
+shared/inventory-core.md	correct for its inputs
+shared/inventory-core.md	provisional until
+shared/inventory-core.md	not a merchant brief
+skills/4d-inventory/references/decisions/reorder.md	could not run
+skills/4d-inventory/references/decisions/reorder.md	say so in the brief
+skills/4d-inventory/references/decisions/reorder.md	once the check settles
+skills/4d-inventory/references/measuring-inventory-impact.md	after the order lands
+shared/inventory-core.md	closed at zero or below and sold nothing
+examples/inventory/slow-stock-tote.md	Hold the rest
+examples/inventory/slow-stock-tote.md	237
+examples/inventory/slow-stock-tote.md	518
+skills/4d-inventory/references/decisions/slow-stock.md	Hold the rest
+skills/4d-inventory/references/decisions/slow-stock.md	237
+examples/inventory/reorder-trail-sock.md	16.8 weeks
+skills/4d-inventory/references/decisions/reorder.md	16.8 weeks
+skills/4d-inventory/references/decisions/reorder.md	round up to the case pack again
+skills/4d-inventory/references/decisions/reorder.md	round down to a pack
+skills/4d-inventory/references/decisions/reorder.md	below the MOQ
+skills/4d-inventory/references/decisions/reorder.md	− later incoming
+evals/inventory-scenarios.md	18 weeks

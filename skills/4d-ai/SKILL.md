@@ -39,6 +39,8 @@ Separate observed facts, interpretations, and hypotheses. Identify assumptions t
 
 When the evidence cannot yet distinguish a bug from usability friction, propose the next investigation rather than presenting one speculative implementation as the established fix. Label any candidate solution as provisional.
 
+When the evidence concerns forecasts, reorder quantities or stock levels, read [the inventory domain](references/domains/inventory-core.md) and run its data, demand, supply and tool-settings checks before concluding it is a product bug.
+
 Read relevant code and tests, reproduce when feasible, and compare behavior with the intended contract. If reproduction is unavailable, explain alternative evidence and remaining uncertainty. Choose further investigation for its decision value, not merely to accumulate data.
 
 After approval, implement the smallest coherent change that solves the approved problem. Follow [implementation guidance](references/implementation-and-verification.md). Verify behavior with appropriate tests and direct checks, reporting what passed, failed, or remains untested. Open a PR/MR when requested or authorized; otherwise prepare the patch and summary. Approval to implement does not automatically authorize merging or deploying.

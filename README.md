@@ -43,6 +43,13 @@ Each skill has one shared implementation for both hosts, focused references, and
 - [Customer feedback to an improvement](examples/customer-feedback-to-improvement.md)
 - [Error logs to a bug fix](examples/error-log-to-fix.md)
 
+The `4d-inventory` skill adds four fictional inventory walkthroughs, with their data:
+
+- [Reorder a variant that kept selling out](examples/inventory/reorder-trail-sock.md)
+- [Trust a forecast after a wholesale spike](examples/inventory/forecast-trust-hoodie.md)
+- [Slow stock before its season](examples/inventory/slow-stock-tote.md)
+- [A product team's "forecast too low" report](examples/inventory/team-bug-report.md)
+
 No particular tracker, analytics service, agent name, or label is required. Chat and repository documents are sufficient to start. Mixpanel, Jira, GitHub, and GitLab are optional integrations through tools you already have. See [integration guidance](skills/4d-ai/references/integrations.md).
 
 ## Scope and status
@@ -54,6 +61,8 @@ This instruction-based skill is not a monitoring service or enforcement mechanis
 **Initial public preview:** structure and local references are checked. End-to-end behavioral trials on both Claude Code and Codex are pending. See the [evaluation scenarios](evals/README.md). Installation support is not a claim of production validation.
 
 The skill includes safeguards informed by maintainer-reported operational incidents: preserving approval conditions, testing the intended running build and affected shared consumers, reporting incomplete verification, and closing the loop with reporters. [Anonymized evaluation cases](evals/field-informed-scenarios.md) turn these lessons into checks; the incident reports alone do not establish that the skill passes them.
+
+**4d-inventory (initial preview):** a sibling skill that applies the four Ds to three inventory decisions: trusting a forecast, reordering, and slow stock. It shares an inventory core with `4d-ai` and only advises; it never places orders. Behavioural trials are pending; see the [inventory scenarios](evals/inventory-scenarios.md).
 
 ## Contributing
 

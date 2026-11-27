@@ -5,7 +5,7 @@ This page installs the software-improvement skill `4d-ai`. For general customer 
 Use the same skill directory as Claude Code. Ask the built-in installer:
 
 ```text
-Use $skill-installer to install skills/4d-ai from https://github.com/stevengotrung/4d-ai.
+Use $skill-installer to install skills/4d-ai from https://github.com/stevengotrung/4d-ai. For inventory decisions, also install skills/4d-inventory the same way.
 ```
 
 If the installer is unavailable, copy `skills/4d-ai` into your configured Codex skills location (commonly `~/.codex/skills/`). Preserve references and assets. Review an existing installation before replacing it; use one installation scope supported by your host.
