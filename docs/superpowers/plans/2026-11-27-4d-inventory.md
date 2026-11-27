@@ -260,7 +260,7 @@ Out of scope: everything the spec lists as out of scope, the Codex run (release 
   - The reorder worked example is the Trail Sock case:
     - censored rate 24/week (3.43/day);
     - observed lead time 21 days;
-    - 30 safety units;
+    - 30 safety units (≈ 9 safety days);
     - reorder point 102;
     - on hand 40 + transfer 35 = position 75;
     - order cycle 28 days, so the target is 198;
