@@ -328,7 +328,7 @@ The scan enforces this.
   - without the checks (optional).
 
 ### Routing in `4d-ai`
-One line in Discern: *"When the evidence concerns forecasts, reorder quantities or stock levels, read [the inventory domain](references/domains/inventory-core.md) and run its data, demand, supply and tool-settings checks before concluding it is a product bug."*
+One line in Discern: *"When the evidence concerns forecasts, reorder quantities or stock levels, read the inventory domain (`references/domains/inventory-core.md`, linked) and run its data, demand, supply and tool-settings checks before concluding it is a product bug."*
 
 ## Evals (`evals/inventory-scenarios.md`)
 

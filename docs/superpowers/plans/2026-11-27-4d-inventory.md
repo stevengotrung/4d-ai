@@ -19,7 +19,7 @@ Out of scope: everything the spec lists as out of scope, the Codex run (release 
 ## Global Constraints
 
 - **Public repo:**
-  - No word from the private-term list may appear anywhere in the repo. The list is at `$PRIVATE_TERMS_FILE`, default `$HOME/Documents/Assisty/4d-ai-private/private-terms.txt`.
+  - No word from the private-term list may appear anywhere in the repo. The list's path is given by `$PRIVATE_TERMS_FILE`; it lives outside the repo and has no default.
   - Match whole words and case-sensitively; the list is never committed.
   - Write "the maintainer" instead of any company, product or agent name.
 - **Data:** every store, product, person and number is fictional. The store is "Northpine Outfitters", with locations "Main" and "Riverside".
