@@ -102,3 +102,34 @@ skills/4d-inventory/references/decisions/forecast-trust.md	same period last year
 skills/4d-inventory/references/decisions/forecast-trust.md	stayed in stock
 skills/4d-inventory/references/decisions/forecast-trust.md	too short to judge
 skills/4d-inventory/references/decisions/forecast-trust.md	../data-checks.md
+skills/4d-inventory/references/decisions/reorder.md	(lead time + safety days) × sales speed
+skills/4d-inventory/references/decisions/reorder.md	Nothing is suggested until
+skills/4d-inventory/references/decisions/reorder.md	(lead time + order cycle + safety days) × sales speed
+skills/4d-inventory/references/decisions/reorder.md	never both
+skills/4d-inventory/references/decisions/reorder.md	arrives later
+skills/4d-inventory/references/decisions/reorder.md	lost
+skills/4d-inventory/references/decisions/reorder.md	backlog
+skills/4d-inventory/references/decisions/reorder.md	manual floor
+skills/4d-inventory/references/decisions/reorder.md	fixed order quantity
+skills/4d-inventory/references/decisions/reorder.md	max inventory
+skills/4d-inventory/references/decisions/reorder.md	case pack
+skills/4d-inventory/references/decisions/reorder.md	only warn
+skills/4d-inventory/references/decisions/reorder.md	transfer first
+skills/4d-inventory/references/decisions/reorder.md	cash cost
+skills/4d-inventory/references/decisions/reorder.md	end-of-season sell-through
+skills/4d-inventory/references/decisions/reorder.md	does not create
+skills/4d-inventory/references/decisions/slow-stock.md	+ 60
+skills/4d-inventory/references/decisions/slow-stock.md	90 days
+skills/4d-inventory/references/decisions/slow-stock.md	worth a look
+skills/4d-inventory/references/decisions/slow-stock.md	30 / 60 / 90+
+skills/4d-inventory/references/decisions/slow-stock.md	kept selling out
+skills/4d-inventory/references/decisions/slow-stock.md	pre-build
+skills/4d-inventory/references/decisions/slow-stock.md	override
+skills/4d-inventory/references/decisions/slow-stock.md	stop buying
+skills/4d-inventory/references/decisions/slow-stock.md	cut order quantities
+skills/4d-inventory/references/decisions/slow-stock.md	supplier return
+skills/4d-inventory/references/decisions/slow-stock.md	bundle with a fast-seller
+skills/4d-inventory/references/decisions/slow-stock.md	mark down part
+skills/4d-inventory/references/decisions/slow-stock.md	liquidate
+skills/4d-inventory/references/decisions/slow-stock.md	margin
+skills/4d-inventory/references/decisions/slow-stock.md	60–90 days
