@@ -4,7 +4,16 @@ Turn evidence of user difficulties into reviewed, verified software improvements
 
 **Define → Dialogue → Discern → Determine Impact**
 
-An English-language agent skill for **Claude Code and Codex**, based on the [4D Framework](https://4dframework.org/). Start with a bug report, customer feedback, a session replay, analytics, or logs. Investigate, propose a change for human approval, then implement and verify the approved scope and prepare a PR or MR.
+English-language agent skills for **Claude Code and Codex**, based on the [4D Framework](https://4dframework.org/).
+
+| Skill | Use it for | Start here |
+| --- | --- | --- |
+| `4d-ai` | Evidence-led software fixes and improvements, from investigation to an approved PR/MR and impact follow-up | [Claude Code](docs/claude-code.md) · [Codex](docs/codex.md) |
+| `4d-customer-support` | Customer questions, repeated contacts, grounded reply drafts, team handoffs, and confirmed outcomes across software, retail, and services | [Usage and installation](docs/customer-support.md) · [Interactive HTML demo](examples/customer-support-demo.html) |
+
+The support demo is a standalone offline file with three fictional cases. Download the raw HTML and open it in a browser; GitHub's file view shows the source. It makes no AI calls and sends no messages.
+
+For text examples, read the [customer-support walkthroughs](examples/customer-support-walkthroughs.md).
 
 ## Get started
 
@@ -19,7 +28,7 @@ For an already approved task, provide the proposal or its location. The skill sh
 
 ## What is included
 
-One shared skill, focused references, a reusable finding template, and three fictional walkthroughs:
+Each skill has one shared implementation for both hosts, focused references, and a reusable case template. Software-improvement walkthroughs:
 
 - [Session replay to a UI fix](examples/session-replay-to-fix.md)
 - [Customer feedback to an improvement](examples/customer-feedback-to-improvement.md)

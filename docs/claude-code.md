@@ -1,5 +1,7 @@
 # Install in Claude Code
 
+This page installs the software-improvement skill `4d-ai`. For general customer support, use the [customer-support installation and usage guide](customer-support.md).
+
 Install the skill directory with its references and assets. A plugin marketplace is not required.
 
 ```sh

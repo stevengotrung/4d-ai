@@ -1,5 +1,7 @@
 # Install in Codex
 
+This page installs the software-improvement skill `4d-ai`. For general customer support, use the [customer-support installation and usage guide](customer-support.md).
+
 Use the same skill directory as Claude Code. Ask the built-in installer:
 
 ```text
