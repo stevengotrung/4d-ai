@@ -1,5 +1,7 @@
 # Behavioral evaluation scenarios
 
+This page covers the software-improvement skill. Also see [customer support](customer-support.md) and [Product, Marketing, Operations, and Learning & Development](role-skills.md).
+
 Run in isolated fixture repositories on Claude Code and Codex using fictional data and stubbed tools. Record host/model/version, input, observed actions/artifacts, and pass/fail with evidence. These are evaluation cases, not claims that runs passed.
 
 | Scenario | Expected behavior |
