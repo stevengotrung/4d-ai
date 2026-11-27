@@ -48,10 +48,12 @@ def trail_sock():
         if r["variant"] == v and r["location"] == loc and start <= day(r["date"]) <= WINDOW_END:
             sales[day(r["date"])] = sales.get(day(r["date"]), 0) + int(r["units"])
     stock = {day(r["date"]): r for r in rows("northpine-stock.csv") if r["variant"] == v and r["location"] == loc}
+    def sold_out(d):  # no stock to sell all day: closed at zero or below and sold nothing
+        return int(stock[d]["on_hand"]) <= 0 and sales.get(d, 0) == 0 and stock[d]["continue_selling"] == "false"
     censored, in_stock_units, in_stock_days, raw = 0, 0, 0, 0
     for w in range(WEEKS):
         days = [start + dt.timedelta(days=7 * w + i) for i in range(7)]
-        out = [d for d in days if int(stock[d]["on_hand"]) <= 0 and stock[d]["continue_selling"] == "false"]
+        out = [d for d in days if sold_out(d)]
         units = sum(sales.get(d, 0) for d in days)
         raw += units
         if len(out) >= 3:
@@ -60,6 +62,9 @@ def trail_sock():
             in_stock_units += units
             in_stock_days += 7
     rate_day = in_stock_units / in_stock_days
+    window = [start + dt.timedelta(days=i) for i in range(7 * WEEKS)]
+    out_days = [d for d in window if sold_out(d)]
+    per_day = sum(sales.get(d, 0) for d in window) / (len(window) - len(out_days))
     pos = sorted((r for r in rows("northpine-pos.csv") if r["variant"] == v and r["status"] == "received"),
                  key=lambda r: r["received"])[-4:]
     lead = sum((day(r["received"]) - day(r["ordered"])).days for r in pos) / len(pos)
@@ -78,6 +83,8 @@ def trail_sock():
         "observed_lead_time_days": lead,
         "reorder_point": round(rop),
         "order_qty": order,
+        "per_day_rate_week": per_day * 7,
+        "guardrail_flag_weeks": (lead + cycle + safety / rate_day + 60) / 7,
     }
 
 
@@ -96,10 +103,15 @@ def tote():
     start = WINDOW_END - dt.timedelta(days=27)
     units = sum(int(r["units"]) for r in rows("northpine-sales.csv")
                 if r["variant"] == v and start <= day(r["date"]) <= WINDOW_END)
-    return {"on_hand": on_hand, "weeks_of_cover": on_hand / (units / 4)}
+    rate = units / 4
+    weeks_to_march = (dt.date(2027, 3, 1) - dt.date(2026, 11, 27)).days / 7
+    left_by_march = on_hand - rate * weeks_to_march
+    spring_need = 30 * ((dt.date(2027, 6, 30) - dt.date(2027, 3, 1)).days / 7)  # merchant: about 30 a week, March to June
+    return {"on_hand": on_hand, "weeks_of_cover": on_hand / rate,
+            "left_by_march": left_by_march, "spring_need": spring_need}
 
 
-TOLERANCE = {"in_stock_rate_week": 0.5, "raw_rate_week": 0.5, "observed_lead_time_days": 1, "weeks_of_cover": 1}
+TOLERANCE = {"per_day_rate_week": 0.5, "guardrail_flag_weeks": 0.2, "left_by_march": 5, "spring_need": 10, "in_stock_rate_week": 0.5, "raw_rate_week": 0.5, "observed_lead_time_days": 1, "weeks_of_cover": 1}
 CASES = {"reorder-trail-sock.md": trail_sock, "forecast-trust-hoodie.md": hoodie, "slow-stock-tote.md": tote}
 
 

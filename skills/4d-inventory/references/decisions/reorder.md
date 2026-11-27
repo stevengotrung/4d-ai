@@ -20,7 +20,7 @@ Nothing is suggested until the inventory position falls to the reorder point. If
 Order up to a target:
 
 - target = (lead time + order cycle + safety days) × sales speed;
-- order = target − inventory position.
+- order = target − inventory position − later incoming, where later incoming is stock on order that lands after the new order would.
 
 The order cycle is the number of days of sales each order is meant to cover. Some tools use the same words for how often you order. Say which meaning your number assumes.
 
@@ -46,9 +46,9 @@ Apply them in this order:
 
 1. A merchant's manual floor (minimum stock) stands even when the forecast is zero.
 2. A fixed order quantity, if set, replaces the computed one.
-3. The max inventory cap.
-4. Round up to the case pack.
-5. Check MOQ and order-value minimums.
+3. Round up to the case pack.
+4. Raise to the MOQ or order-value minimum if below it, then round up to the case pack again.
+5. Apply the max inventory cap last: if the order would take stock above it, cut the order and round down to a pack. If that leaves the order below the MOQ, say so and let the merchant choose between the cap and the minimum.
 
 Many tools only warn on MOQ and order value and do not change the number. Say whether the number shown already respects them.
 
@@ -72,6 +72,6 @@ A merchant asks whether to reorder Merino Trail Sock, size M, at the Main locati
 - **Reorder point:** (21 + 8.75) × 3.43 ≈ 102. The position of 75 is below it, so order.
 - **Order:** target (21 + 28 + 8.75) × 3.43 ≈ 198; 198 − 75 = 123. Rounded up to packs of 12 that is 132, above the MOQ.
 - **Cash cost:** 132 × $6.40 = $844.80.
-- **Guardrail:** on arrival, 75 − 72 + 132 = 135 units, about 5.6 weeks of cover, under the flag.
+- **Guardrail:** on arrival, 75 − 72 + 132 = 135 units, about 5.6 weeks of cover. The flag is (21 + 28 + 8.75 + 60) days ≈ 16.8 weeks, so it is well under.
 - **Without the checks:** 18/week and 14 days give 98, rounded to 108. The order misses the Riverside stock and arrives a week later than planned, so the sock sells out again.
-- **Look again** in 30 days. Keep if there were no sold-out days and cover stayed under the flag.
+- **Look again** 30 days after the order lands. Keep if there were no sold-out days and cover stayed under 16.8 weeks.

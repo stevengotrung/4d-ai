@@ -150,3 +150,16 @@ skills/4d-inventory/references/decisions/reorder.md	could not run
 skills/4d-inventory/references/decisions/reorder.md	say so in the brief
 skills/4d-inventory/references/decisions/reorder.md	once the check settles
 skills/4d-inventory/references/measuring-inventory-impact.md	after the order lands
+shared/inventory-core.md	closed at zero or below and sold nothing
+examples/inventory/slow-stock-tote.md	Hold the rest
+examples/inventory/slow-stock-tote.md	237
+examples/inventory/slow-stock-tote.md	518
+skills/4d-inventory/references/decisions/slow-stock.md	Hold the rest
+skills/4d-inventory/references/decisions/slow-stock.md	237
+examples/inventory/reorder-trail-sock.md	16.8 weeks
+skills/4d-inventory/references/decisions/reorder.md	16.8 weeks
+skills/4d-inventory/references/decisions/reorder.md	round up to the case pack again
+skills/4d-inventory/references/decisions/reorder.md	round down to a pack
+skills/4d-inventory/references/decisions/reorder.md	below the MOQ
+skills/4d-inventory/references/decisions/reorder.md	− later incoming
+evals/inventory-scenarios.md	18 weeks

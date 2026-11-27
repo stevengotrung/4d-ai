@@ -264,9 +264,9 @@ The scan enforces this.
 - **Limits, in order of application:**
   1. a merchant's manual floor (survives a zero forecast);
   2. fixed order quantity (if set);
-  3. max inventory cap;
-  4. case pack (round up);
-  5. MOQ and order-value minimums.
+  3. case pack (round up);
+  4. MOQ and order-value minimums, then round up to the case pack again;
+  5. max inventory cap last, rounded down to a pack (say so if that falls below the MOQ).
 
   Many tools only warn on MOQ and order value. Say whether the number shown already respects them.
 - **Required before any "buy":**

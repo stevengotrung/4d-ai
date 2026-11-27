@@ -23,6 +23,8 @@ Sales during a stockout show what was sold, not what was wanted. Whether a sold-
 - A variant that **stops selling when out of stock** loses the orders it would have taken. Those days hide demand.
 - A variant that **keeps selling** when out of stock (backorders, preorders) still records demand in its orders. Its zero-stock days are real demand and must not be removed.
 
+A **sold-out day** is a day with no stock to sell: it closed at zero or below and sold nothing. A day that sells its last unit, or receives stock and sells it, is an in-stock day.
+
 How to correct for it:
 
 - **Per day**, when daily stock is known: sales speed = units ÷ in-stock days.

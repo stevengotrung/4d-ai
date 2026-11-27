@@ -49,10 +49,11 @@ Review after 60–90 days. Slow stock moves slowly, so 30 days rarely shows a ch
 A merchant has 400 Canvas Totes in Sand that "barely move".
 
 - **Cash at stake:** 400 × $8 cost = $3,200.
-- **Rate:** 12 a week now, so about 33 weeks of cover, well over the flag.
-- **Ruled out:** it never sold out. It is off-season, though: last spring it sold 30 a week from March to June.
+- **Rate:** 12 a week now, so about 33 weeks of cover. That is well over the flag on its face.
+- **Ruled out:** it never sold out.
+- **Rule out first, off-season:** last spring it sold about 30 a week from March to June. At 12 a week, about 237 totes are left by 1 March. Spring needs about 518. There is no excess: the stock is short for spring, not slow.
 - **Found:** a draft PO for 100 more totes.
-- **Do this:** cancel the draft. Bundle the tote with the Trail Sock, and mark down 150 units by 20%. Keep 250, about 8 weeks of spring demand.
-- **Ruled out:** clearing all 400, which gives up spring sales at full price.
-- **Guardrail:** keep at least 8 weeks of spring cover, and margin on the cleared units above zero.
-- **Look again** in 60 days. Keep if slow-stock value is down to about $2,000.
+- **Do this:** this is not slow stock. Cancel or hold the draft PO until spring demand shows up, then reorder against it. Hold the rest; don't mark it down.
+- **This might seem wrong because** 33 weeks of cover looks like dead stock. That figure uses the off-season rate.
+- **Guardrail:** availability in spring. Plan a reorder in February, so the spring shortfall of about 280 is covered in time.
+- **Look again** in early March, once the spring rate is visible.

@@ -63,5 +63,5 @@ Run these when a tool produced the number being judged.
 | Median or high percentile | A high percentile shown as "the forecast" looks too high; it is a buffer, not the expected value | Name the median |
 | History window and trend % | A different window or a manual trend adjustment can flip the result | Name both and show the result without the adjustment |
 | Data current | A forecast computed before the last sync or recalculation is stale | Give the time of the last update, or could not run |
-| Which level set each value | Settings layer: global, then supplier, then item. A forgotten per-item override is a top cause of odd quantities | Name the level of each value used |
-| Order quantity uses on-hand | Some tools subtract only incoming stock, not on-hand, from the order quantity | Say which form the number assumes |
+| Which level set each value | Many tools let a setting be made store-wide, per supplier or per item, and the narrowest one wins. A forgotten per-item override is a common cause of odd quantities | Name the level of each value used |
+| Order quantity uses on-hand | Tools differ in what they subtract from the target: on-hand, incoming, or both | Say which form the number assumes |
