@@ -1,3 +1,7 @@
+# Current coordination evaluation
+
+See the [coordination comparison protocol](coordination/README.md) for the rewrite. Comparative results are pending. The material below covers earlier specialist previews and does not validate the new coordination skill.
+
 # Behavioral evaluation scenarios
 
 This page covers the software-improvement skill. Also see [customer support](customer-support.md), [Product, Marketing, Operations, and Learning & Development](role-skills.md), and [Sales](sales.md).
@@ -25,6 +29,6 @@ Evaluate decisions and side effects, not exact wording. Before a stable release,
 
 See [field-informed scenarios](field-informed-scenarios.md) for cases covering reporter closure, environment identity, independent user journeys, shared consumers, approval provenance and conditions, design fidelity, verification blockers, runnable impact reviews, documentation, production queries, traceable UI evidence, and shared test resources.
 
-The [inventory scenarios](inventory-scenarios.md) cover the `4d-inventory` skill and `4d-ai`'s inventory routing.
+The [inventory scenarios](inventory-scenarios.md) cover the `4d-inventory` skill and `4d-engineering`'s inventory routing.
 
 The [26 November simulated review](field-review-2026-11-26.md) records nine blind interpretation checks and their limits. It does not replace live host testing.

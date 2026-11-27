@@ -10,6 +10,7 @@ check() { # check <path> <max bytes>
   if [ "$n" -gt "$2" ]; then echo "too large: $1 is $n bytes (budget $2)"; status=1; fi
 }
 check skills/4d-inventory/SKILL.md 6144
+check skills/4d-engineering/SKILL.md 7168
 check skills/4d-ai/SKILL.md 7168
 [ $status -eq 0 ] && echo "size: ok"
 exit $status

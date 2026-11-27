@@ -30,7 +30,7 @@ A decision brief: user problem and segment, evidence with confidence/unknowns, o
 
 ## Review and act
 
-You can say “make this shorter,” “compare another option,” or correct a source. Do not promise roadmap dates, contact research participants, publish priorities, create external tickets, or initiate engineering work without applicable authorization. A concrete approved build can be handed to an engineering workflow, optionally `4d-ai` if available. This skill must still work without that dependency.
+You can say “make this shorter,” “compare another option,” or correct a source. Do not promise roadmap dates, contact research participants, publish priorities, create external tickets, or initiate engineering work without applicable authorization. A concrete approved build can be handed to an engineering workflow, optionally `4d-engineering` if available. This skill must still work without that dependency.
 
 Observe whether users identify the right orders, how long it takes, and whether they return to the old workaround. Record data freshness and training changes as possible confounders. If follow-up data is absent, impact remains pending. No background job is created by invoking the skill.
 

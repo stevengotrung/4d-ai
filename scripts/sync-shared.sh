@@ -5,7 +5,7 @@ set -euo pipefail
 ROOT="${REPO_ROOT:-$(cd "$(dirname "$0")/.." && pwd)}"
 SRC="$ROOT/shared/inventory-core.md"
 TARGETS=(
-  "skills/4d-ai/references/domains/inventory-core.md"
+  "skills/4d-engineering/references/domains/inventory-core.md"
   "skills/4d-inventory/references/inventory-core.md"
 )
 HEADER='<!-- generated from shared/inventory-core.md by scripts/sync-shared.sh; edit the source -->'

@@ -37,6 +37,6 @@ Define task completion, decision quality, repeat use where relevant, and guardra
 
 A decision brief: user problem and segment, evidence with confidence/unknowns, options and trade-offs, recommended next experiment, scope/non-goals, acceptance or learning criteria, and the next owner/decision. Keep simple cases concise; do not require every section for every task. Use [the brief template](assets/brief-template.md) when a durable handoff helps. Read [practice guidance](references/practice-guide.md) for deeper decisions.
 
-Do not promise roadmap dates, contact research participants, publish priorities, create external tickets, or initiate engineering work without applicable authorization. A concrete approved build can be handed to an engineering workflow, optionally `4d-ai` if available. This skill must still work without that dependency.
+Do not promise roadmap dates, contact research participants, publish priorities, create external tickets, or initiate engineering work without applicable authorization. A concrete approved build can be handed to an engineering workflow, optionally `4d-engineering` if available. This skill must still work without that dependency.
 
 On handoff, record proposal/approval, executed actions, checks and limitations, next owner/action, and follow-up timing and result location. When sources or tools are unavailable, report limitations rather than claiming work happened. A skill does not create a background monitor. Keep private evidence out of public artifacts.

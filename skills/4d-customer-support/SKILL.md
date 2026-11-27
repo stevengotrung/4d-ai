@@ -37,7 +37,7 @@ Separate observations, customer reports, hypotheses, and verified facts. Check g
 
 Verify actionable steps in a suitable environment when feasible. Do not repeat a failed workaround without new evidence or changed conditions. Report untested steps and limitations honestly. Never promise a refund, delivery date, appointment, entitlement, or software fix without supporting evidence and authority.
 
-Choose the responsible team based on the actual issue: support, operations, finance, fulfillment, service delivery, product, or engineering. Follow [handoff and closure](references/handoff-and-closure.md). For a software change, a confirmed or well-supported finding can be handed to an engineering workflow, optionally the `4d-ai` skill if installed. Do not require that skill, create a bug for every report, or edit product code as part of support without explicit scope.
+Choose the responsible team based on the actual issue: support, operations, finance, fulfillment, service delivery, product, or engineering. Follow [handoff and closure](references/handoff-and-closure.md). For a software change, a confirmed or well-supported finding can be handed to an engineering workflow, optionally the `4d-engineering` skill if installed. Do not require that skill, create a bug for every report, or edit product code as part of support without explicit scope.
 
 ## Determine Impact: can the customer complete the task?
 

@@ -1,6 +1,6 @@
 # Product team report: "the forecast is too low"
 
-Fictional example. It runs through `4d-ai`, which loads the shared inventory core. It does not describe a known issue in any product.
+Fictional example. It runs through `4d-engineering`, which loads the shared inventory core. It does not describe a known issue in any product.
 
 **Request:** a support ticket in a product team's tracker: "Merchant says the forecast is way too low for Trail Sock M." Replay notes show the merchant overriding the suggested quantity three times.
 
